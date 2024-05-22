@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #eee;
+}
+
+.nav_menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4367c5;
+}
+.nav_menu nav{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav_menu nav .title_text .til_txt{
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+
+
+.search_box{
+    height: 35px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 40px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.search_btn{
+    border: none; /* Remove borders */
+    color: #70afce;  /* Some padding */
+    font-size: 16px; /* Set a font size */
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.search_txt{
+    border: none;
+    background: none;
+    outline: none;
+    color: black;
+    width: 200px;
+}
+
+
+.icon_cont{
+    display: flex;
+    align-items: center;
+    
+}
+
+
+
+
+
+
+
+@media(max-width:498px){
+    
+    
+    .nav_menu nav .title_text .til_txt{
+        color: #fff;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    
+    
+    .search_box{
+        height: 35px;
+        margin: 10px;
+        background-color: #fff;
+        border-radius: 40px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .search_btn{
+        color: #70afce;
+        margin-left: 10px;
+    }
+    
+    .search_txt{
+        border: none;
+        background: none;
+        outline: none;
+        color: black;
+        width: 100px;
+    }
+    
+}
+
+
+
+
+
+
+.jobcontainer{
+    margin-top: 3rem;
+}
+  
+.jobcard{
+    width: 100%;
+    max-width: 48rem;
+    margin-top: 5rem;
+    padding: 1rem;
+    background-color: #e6e6e6;
+    box-sizing: 0 1.4rem 8rem rgba(0,0,0,.2);
+    display: flex;
+    align-items: center;
+    border-radius: .8rem;
+}
+  
+.cimg{
+    min-width: 18rem;
+    max-width: 18rem;
+    height: 12rem;
+    transform: translateX(-4rem);
+    position: relative;
+}
+  
+.cimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: .8rem;
+}
+  
+  
+.cname{
+    font-size: 2.5rem;
+    margin: 1.5rem 0 0.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #4367c5;
+}
+  
+.role{
+    margin: 0;
+    font-size: 1.2rem;
+    color: rgba(0,0,0,.7);
+}
+.sp_text{
+    
+    color: #4367c5;
+}
+.req{
+    font-size: 1.2rem;
+    color: rgba(0,0,0,.7);
+}
+  
+.view_detail{
+    color: #fff;
+    font-size: 1rem;
+    display: inline-block;
+    padding: .5rem 1.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    border-radius: .8rem; 
+}
+  
+  
+@media screen and (max-width: 1068px){
+    .jobcard{
+      max-width: 38rem;
+    }
+  
+    .cimg{
+      min-width: 15rem;
+      max-width: 15rem;}
+  
+}
+  
+  
+@media screen and (max-width: 768px){
+    .jobcard{
+      padding: 2.5rem;
+      flex-direction: column;
+    }
+  
+    
+  .cname{
+    margin: 0rem 0 0.5rem;
+  }
+  
+    .cimg{
+      min-width: 100%;
+      max-width: 100%;
+      transform: translate(0, -4rem);
+    }
+  
+}
